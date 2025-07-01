@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Train With Coach Deeni</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e5be35b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar + Hero -->
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">Coach Deeni</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Programs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+      <button id="darkModeToggle" class="btn small">Dark Mode</button>
+    </nav>
+    <div class="hero-content" data-aos="fade-up">
+      <h2>Train Hard. Stay Strong.</h2>
+      <p>Your transformation starts here.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="about" data-aos="fade-right">
+    <h2>Meet Coach Deeni</h2>
+    <p>I’m a certified fitness trainer helping you become your best self through custom workouts and discipline. Join me to level up your strength, health, and mindset.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Training Programs</h2>
+    <div class="service-cards">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Muscle Building</h3>
+        <p>Grow your physique with structured hypertrophy plans.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-running"></i>
+        <h3>Fat Loss</h3>
+        <p>Shred fat through functional training & cardio discipline.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-heartbeat"></i>
+        <h3>Endurance</h3>
+        <p>Train like an athlete and boost your energy output.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Slider -->
+  <section class="testimonials" data-aos="fade-up">
+    <h2>What Clients Say</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">"Coach Zaha changed my life!"</div>
+        <div class="swiper-slide">"Best investment for my health."</div>
+        <div class="swiper-slide">"I've never felt stronger."</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+<section class="test-card">
+<div class="card">
+    <div class="icon">💪</div>
+    <h3>Muscle Building</h3>
+    <p>Grow your strength with structured plans.</p>
+</div>
+<div class="card">
+    <div class="icon">🔥</div>
+    <h3>Fat Burn</h3>
+    <p>Sweat hard and shed body fat fast.</p>
+</div>
+<div class="card">
+    <div class="icon">🧠</div>
+    <h3>Mindset Training</h3>
+    <p>Train your discipline from within.</p>
+</div>
+</section>
+  <!-- Contact Form -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Get In Touch</h2>
+    <form id="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Coach Zaha. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>
