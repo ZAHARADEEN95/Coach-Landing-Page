@@ -203,7 +203,7 @@ body.dark-mode footer {
   }
 }
 /* Test Card Section */
-.test-cards {
+.test-card {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -212,7 +212,7 @@ body.dark-mode footer {
   flex-wrap: wrap;
 }
 
-.test-cards .card {
+.test-card .card {
   background: white;
   padding: 30px;
   width: 250px;
@@ -222,11 +222,11 @@ body.dark-mode footer {
   transition: transform 0.3s ease;
 }
 
-.test-cards .card:hover {
+.test-card .card:hover {
   transform: translateY(-10px);
 }
 
-.test-cards .icon {
+.test-card .icon {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
