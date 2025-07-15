@@ -1,0 +1,266 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff5500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e64500;
+}
+
+.hero {
+  height: 90vh;
+  background: url('https://media.istockphoto.com/id/2154202699/photo/dark-gym-interior-with-sports-equipment-empty-room-in-the-morning.webp?a=1&b=1&s=612x612&w=0&k=20&c=_TofqtfGD9LYM5ocJ_PO-A64SapUw6e_kZqlXzrVF_A=') no-repeat center center/cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Section styling */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff5500;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: #fff;
+}
+
+/* Testimonials */
+.swiper-slide {
+  padding: 1rem;
+  font-style: italic;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer {
+  background-color: #1e1e1e;
+}
+
+.dark-mode a {
+  color: #80c4ff;
+}
+
+.dark-mode .card {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+}
+/* Test Card Section */
+.test-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.test-card .card {
+  background: white;
+  padding: 30px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.test-card .card:hover {
+  transform: translateY(-10px);
+}
+
+.test-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}.nav-links a.active {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+.footer {
+  background: #111;
+  color: #eee;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+}
+
+.footer a {
+  color: #eee;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer .footer-links li {
+  display: inline-block;
+}

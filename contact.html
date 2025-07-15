@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact  |  Coach Deeni</title>
+  <meta name="description" content="Reach out to Coach Deeni for personalized fitness coaching, questions, or program inquiries. Start your fitness journey today.">
+  <meta name="author" content="Zaharadeen Kabiru Sani">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e5be35b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Coach Deeni</h1>
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Programs</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></button>
+      <button id="darkModeToggle" class="btn small">Dark Mode</button>
+    </nav>
+  </header>
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Coach Deeni</h2>
+      <p>Got a question or ready to get started? Fill the form below to reach out.</p>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="user_name" id="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="user_email" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Coach Deeni. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Programs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("UOW32JGUIBvZYMnTM");
+  </script>
+  <script src="css/js/script.js"></script>
+</body>
+</html>
